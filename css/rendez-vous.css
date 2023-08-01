@@ -18,7 +18,7 @@ body{
 }
 .container {
   position: relative;
-  max-width: 700px;
+  max-width: 70%;
   width: 100%;
   background: #fff;
   padding: 25px;
@@ -42,7 +42,7 @@ body{
 .input-box label {
   color: #333;
 }
-.form :where(.input-box input, .select-box) {
+.form :where(.input-box input, textarea, .select-box) {
   position: relative;
   height: 50px;
   width: 100%;
@@ -55,6 +55,9 @@ body{
   padding: 0 15px;
 }
 .input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.input-box textarea:focus {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 .form .column {
@@ -86,10 +89,10 @@ body{
 .form :where(.gender input, .gender label) {
   cursor: pointer;
 }
-.gender label {
+.gender label, textarea {
   color: #707070;
 }
-.address :where(input, .select-box) {
+.address :where(input, textarea, .select-box) {
   margin-top: 15px;
 }
 .select-box select {
