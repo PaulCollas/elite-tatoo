@@ -1,9 +1,9 @@
 footer {
-    background-color: black;
+    background-color: #010101;
     color: white;
-    padding: 20px;
+    padding: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
 }
@@ -17,21 +17,22 @@ footer {
 .column h3 {
     color: white;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 
 .icon-text {
     color: white;
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 40px;
 }
 
-.icon-text img {
+.icon-text i {
     width: 20px;
     height: 20px;
     margin-right: 5px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(339deg) brightness(102%) contrast(101%);
+    color: #E7494F;
 }
 
 .column ul {
@@ -40,7 +41,7 @@ footer {
 }
 
 .column ul li {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .column ul li a {
@@ -60,23 +61,30 @@ footer {
 
 .newsletter input {
     padding: 5px;
-    flex-grow: 1;
+    margin-right: 15px;
     border: none;
 }
 
 .newsletter button {
     padding: 5px 10px;
-    background-color: red;
+    background-color: #E7494F;
     border: none;
     color: white;
     cursor: pointer;
 }
 
-.social-icons img {
+.social-icons i {
     width: 25px;
     height: 25px;
     margin-right: 5px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(102%) contrast(102%);
+    margin-top: 15px;
+}
+
+.icon-social {
+    color: #A5A5A5;
+    font-size: 25px;
+    margin-right: 20px;
 }
 
 hr {
@@ -85,7 +93,7 @@ hr {
 }
 
 .footer-links {
-    text-align: right;
+    margin-top: 15px;
 }
 
 .footer-links a {
@@ -97,6 +105,8 @@ hr {
 .footer-links a:hover {
     color: white;
 }
+
+
 
 /* Point de rupture pour les tablettes */
 @media screen and (max-width: 768px) {
