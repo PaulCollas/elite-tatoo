@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+}
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+/*  Style Tatouage */
+.style-tatouage{
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  width: 1420px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+.style-tatouage-txt{
+  width: 540px;
+  align-self: center;
+}
+.style-tatouage-txt h2{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #E7494F;
+}
+.style-tatouage-txt h1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.style-tatouage-txt p{
+  color: #555555;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+.style-tatouage-img{
+  width: 846px;
+  display: grid;
+  gap: 1rem;
+  grid-template: 415px 415px /  415px 415px ;
+}
+.style-img1{
+  grid-area: 1/1/3/2;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/services/style-tatouage01.webp);
+}
+.style-img2{
+  grid-area: 1/2/2/3;
+  background-size: cover;
+  background-image: url(../img/services/style-tatouage02.webp);
+}
+.style-img3{
+  grid-area: 2/2/3/3;
+  background-size: cover;
+  background-image: url(../img/services/style-tatouage03.webp);
+}
+
+/*  Tatouage Ephémère */
+.tatouage-ephemere{
+  margin-bottom: 6rem;
+  height: 40rem;
+  width: 1420px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+.tatouage-ephemere-txt{
+  text-align: end;
+  width: 540px;
+  align-self: center;
+}
+.tatouage-ephemere-txt h2{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #E7494F;
+}
+.tatouage-ephemere-txt h1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.tatouage-ephemere-txt p{
+  color: #555555;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+.tatouage-ephemere-img{
+  width: 846px;
+  display: grid;
+  gap: 1rem;
+}
+.ephemere-img1{
+  background-size: cover;
+  background-image: url(../img/services/ephemere01.webp);
+}
+
+/* Avantages */
+.avantages{
+  gap: 3rem;
+  margin-bottom: 6rem;
+  width: 1420px;
+  height: 30rem;
+  display: flex;
+  margin-inline: auto;
+}
+.avantages-txt{
+  width: 710px;
+  line-height: 1.5rem;
+  align-self: center;
+}
+.avantages-txt h1{
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.avantages01{
+  display: flex;
+  padding-bottom: 1.5rem;
+  gap: 1rem;
+}
+i{
+  font-size: 1.3rem;
+}
+.avantages01 p{
+  color: #555555;
+  font-size: 1.3rem;
+}
+.avantages-img{
+  width: 710px;
+  background-size: cover;
+  background-image: url(../img/services/ephemere02.webp);
+}
+
+/*  Modele */
+.modeles h2{
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.wrapper{
+  display: flex;
+  max-width: 1420px;
+  position: relative;
+  margin-inline: auto;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #E7494F;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+/*.wrapper i:hover{
+  background: #323232;
+}*/
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 550px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+/*  Retouche Tatouage */
+.retouche-tatouage{
+  margin-top: 7rem;
+  margin-bottom: 8rem;
+  width: 1420px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+.retouche-tatouage-txt{
+  width: 540px;
+  align-self: center;
+}
+.retouche-tatouage-txt h2{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #E7494F;
+}
+.retouche-tatouage-txt h1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.retouche-tatouage-txt p{
+  color: #555555;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+.icone-img{
+  width: 800px;
+  display: grid;
+  gap: 3.5rem;
+  justify-content: space-between;
+  grid-template: 1fr 1fr /  1fr 1fr;
+}
+.icone1 img, .icone2 img, .icone3 img, .icone4 img{
+  width: 3rem;
+}
+.icone-icone1{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icone1 p, .icone2 p, .icone3 p, .icone4 p{
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #555555;
+}
+.icone1{
+  grid-area: 1/1/2/2;
+}
+.icone2{
+  grid-area: 2/1/3/2;
+}
+.icone3{
+  grid-area: 1/2/2/3;
+}
+.icone4{
+  grid-area: 2/2/3/3;
+}
+
+/*  Bloc projets */
+.projets{
+  width: 1420px;
+  height: 130px;
+  margin-inline: auto;
+  display: grid;
+  justify-content: space-between;
+  grid-template: 1fr/ 340px 340px 340px 340px;
+}
+.projets1 h2, .projets3 h2, .projets4 h2{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.projets1 p, .projets3 p, .projets4 p{
+  font-size: 1.5rem;
+}
+.projets2 h2{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.projets2 p{
+  color: white;
+  font-size: 1.5rem;
+}
+.projets1{
+  grid-area: 1/1/2/2;
+  border-radius: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #CCCCCC;
+}
+.projets2{
+  grid-area: 1/2/2/3;
+  border-radius: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #E7494F;
+}
+.projets3{
+  grid-area: 1/3/2/4;
+  border-radius: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #CCCCCC;
+}
+.projets4{
+  grid-area: 1/4/2/5;
+  border-radius: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #CCCCCC;
+}
+
+/*  Comment ça marche */
+.fonctionnement{
+  width: 100%;
+  height: 800px;
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(../img/services/Comment-ca-marche.webp);
+}
+.processus{
+  width: 1420px;
+  margin-inline: auto;
+  text-align: center;
+  color: white;
+}
+.processus h2{
+  padding-bottom: 1.5rem;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.processus p{
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+}
+
+/*  Personnalisation  */
+.personnalisation{
+  width: 1420px;
+  height: 290px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-inline: auto;
+  display: grid;
+  justify-content: space-between;
+  grid-template: 1fr/ 430px 430px 430px;
+}
+.categorie1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  grid-area: 1/1/2/2;
+}
+.categorie2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  grid-area: 1/2/2/3;
+}
+.categorie3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  grid-area: 1/3/2/4;
+}
+.categorie1 h2, .categorie2 h2, .categorie3 h2{
+  font-size: 4rem;
+  font-weight: bold;
+  color: #e7494e9d;
+}
+.categorie1 h3, .categorie2 h3, .categorie3 h3{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.categorie1 p, .categorie2 p, .categorie3 p{
+  font-size: 1.2rem;
+  color: #555555;
+  font-weight: 200;
+  line-height: 1.6rem;
+}
+
+/*  soins et hygiène  */
+.soins-hygiene{
+  margin-bottom: 4rem;
+  width: 1420px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+.soins-hygiene-txt{
+  width: 540px;
+  align-self: center;
+}
+.soins-hygiene-txt h2{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #E7494F;
+}
+.soins-hygiene-txt h1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.soins-hygiene-txt p{
+  color: #555555;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+.soins-hygiene-img{
+  width: 800px;
+  display: grid;
+  gap: 1rem;
+  grid-template: 1fr / 1fr;
+  background-color: rgb(255, 0, 0);
+}
+.soins-img1{
+  grid-area: 1/1/2/2;
+  background-size: cover;
+  background-image: url(../img/services/soins-hygiene.webp);
+}
+
+/*  Conseil */
+.conseil{
+  width: 1420px;
+  margin-inline: auto;
+  display: grid;
+  justify-content: space-between;
+  grid-template: 230px 230px / 680px 680px ;
+}
+.hygiene{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  grid-area: 1/1/2/2;
+}
+.materiel{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  grid-area: 2/1/3/2;
+}
+.soins{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  grid-area: 1/2/2/3;
+}
+.sterilisation{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  grid-area: 2/2/3/3;
+}
+.materiel-icone{
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+}
+.hygiene-icone{
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+}
+.soins-icone{
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+}
+.sterilisation-icone{
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+}
+.conseil-txt h2{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.conseil-txt p{
+  font-size: 1.2rem;
+  color: #555555;
+  font-weight: 200;
+  line-height: 1.6rem;
+}

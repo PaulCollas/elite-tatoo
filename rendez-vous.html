@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendez-vous</title>
+    <link rel="stylesheet" href="css/reseat.css">
+    <link rel="stylesheet" href="css/rendez-vous.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+  
+  <!-- Menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="index.html">Logo.</a></div>
+      <ul class="menu">
+        <li class="nav_link"><a href="index.html">Accueil</a></li>
+        <li class="nav_link"><a href="artistes.html">Artistes</a></li>
+        <li class="nav_link"><a href="services.html">Services</a></li>
+        <li class="nav_link"><a href="rendez-vous.html">Rendez-vous</a></li>
+        <li class="nav_link"><a href="contact.html">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+      <div class="icons-lang">
+        <ul class="menu">
+          <li class="nav_language"><a href="#">FR</a></li>
+          <li class="nav_language"><a href="#">EN</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="img/hero/background_02.webp" alt="tatoueur" class="fitBg">
+    <div class="content">
+      <h1 class="banner_title">Réservez votre  <br> session de tatouage !</h1>
+      <p>Prenez le contrôle de votre art corporel en réservant dès maintenant votre rendez-vous avec nos artistes talentueux. Notre système de réservation en ligne simple et pratique vous permet de choisir le créneau horaire qui vous convient le mieux.</p>
+      <a href="#part-form" class="btn">Réserver un créneau</a>
+    </div>
+  </section>
+    
+  <section id="part-form"  class="formulaire">
+    <div class="container">
+      <header>Prendre un rendez-vous</header>
+      <form action="#" class="form">
+
+          <!-- Formulaire nom -->
+        <div class="input-box">
+          <label>Nom</label>
+          <input type="text" placeholder="Entrer votre nom" required />
+        </div>
+
+          <!-- Formulaire email -->
+        <div class="input-box">
+          <label>Email</label>
+          <input type="text" placeholder="Entrer votre email" required />
+        </div>
+
+        <!-- Formulaire numéro -->
+        <div class="input-box">
+          <label>Numéro</label>
+          <input type="text" placeholder="Entrer votre numéro" required />
+        </div>
+
+        <!-- Date + Heure -->
+        <section class="column">
+          <div class="input-box">
+            <label>Date</label>
+            <input type="date" placeholder="Entrer une date" required />
+          </div>
+          <div class="input-box">
+            <label>Heure</label>
+            <input type="time" placeholder="Entrer une heure" required />
+          </div>
+        </section>
+
+          <!-- Choix artistes -->
+        <section class="input-box address">
+          <label>Sélectionner le tatoueur de votre choix :</label>
+            <div class="select-box">
+              <select>
+                <option>Liam Scoot</option>
+                <option>Liz Wong</option>
+                <option>Matthew Collins </option>
+                <option>Paloma Garcia</option>
+                <option>Yaël Amar</option>
+              </select>
+            </div>
+          </section>
+
+          <!-- choix services -->
+        <section class="gender-box">
+          <h3>Sélectionner le type de services que vous souhaitez :</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" required />
+              <label for="check-male">tatouage permanent</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">tatouage éphémère</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">soin et retouche</label>
+            </div>
+          </div>
+        </section>
+
+          <!-- Choix médicaux -->
+        <section class="case-a-cocher">
+          <legend>Indiquer si vous avez des antécédents médicaux :</legend>
+          <div class="column">
+          <div>
+            <input type="checkbox" id="diabete" name="diabete" required />
+            <label for="diabete">Diabète</label>
+          </div>
+          <div>
+            <input type="checkbox" id="eczema" name="eczema">
+            <label for="eczema">Eczéma</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cheloide" name="cheloide">
+            <label for="cheloide">Chéloïde</label>
+          </div>
+          <div>
+            <input type="checkbox" id="herpes" name="herpes">
+            <label for="herpes">Herpès</label>
+          </div>
+          <div>
+            <input type="checkbox" id="tuberculose" name="tuberculose">
+            <label for="tuberculose">Tuberculose</label>
+          </div>
+        </div>
+        <div class="column">
+          <div>
+            <input type="checkbox" id="hepatiteb" name="hepatiteb">
+            <label for="hepatiteb">Hépatite B</label>
+          </div>
+          <div>
+            <input type="checkbox" id="hepatitec" name="hepatitec">
+            <label for="hepatitec">Hépatite C</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cancer" name="cancer">
+            <label for="cancer">Cancer</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cicatrices" name="cicatrices">
+            <label for="cicatrices">Cicatrices</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sarcoidose" name="sarcoidose">
+            <label for="sarcoidose">Sarcoïdose</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Choix médicaux -->
+      <section class="case-a-cocher">
+        <legend>Légales</legend>
+        <div class="column">
+        <div>
+          <input type="checkbox" id="legales" name="legales" required />
+          <label for="legales">J'ai 18 ans ou plus</label>
+        </div>
+      </div>
+    </section>
+
+        <button>Envoyer</button>
+        
+      </form>
+    </div>
+  </section>
+
+
+</body>
+</html>

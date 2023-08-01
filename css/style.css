@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+}
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+/*  Histoire */
+.histoire{
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  width: 1420px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+.histoire-txt{
+  width: 540px;
+  align-self: center;
+}
+.histoire-txt h1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.histoire-txt p{
+  color: #555555;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+.histoire-img{
+  width: 846px;
+  display: grid;
+  gap: 1rem;
+  grid-template: 1fr / 1fr ;
+}
+.hist-img1{
+  grid-area: 1/1/2/2;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/services/style-tatouage01.webp);
+}
+
+/*  Salon Innovant */
+.innovant{
+  width: 100%;
+  height: 800px;
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(../img/services/Comment-ca-marche.webp);
+}
+.txt-innovant{
+  width: 1420px;
+  margin-inline: auto;
+  text-align: center;
+  color: white;
+}
+.txt-innovant h2{
+  padding-bottom: 1.5rem;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.txt-innovant p{
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+}
+
+/*  Tatouage sur mesure   */
+.personnalite{
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  width: 1420px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+.personnalite-txt{
+  width: 540px;
+  align-self: center;
+}
+.personnalite-txt h1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.personnalite-txt p{
+  color: #555555;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+.personnalite-img{
+  width: 800px;
+  display: grid;
+  gap: 1rem;
+  grid-template: 1fr / 1fr;
+  background-color: rgb(255, 0, 0);
+}
+.personnalite-img1{
+  grid-area: 1/1/2/2;
+  background-size: cover;
+  background-image: url(../img/services/soins-hygiene.webp);
+}
+.image-salon {
+  margin-bottom: 390px;
+}
+
+/*  Pourquoi-nous ? */
+.background{
+  margin-bottom: 6rem;
+  background-color: black;
+}
+.background h1{
+  padding-top: 5rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #555555;
+  width: 1420px;
+  margin-inline: auto;
+  text-align: center;
+}
+.pourquoi-nous{
+  width: 1420px;
+  height: 900px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+}
+.experience, .liberte, .inventivite, .talent, .efficacite {
+  width: 245px;
+}
+.pourquoi-nous h2{
+  font-weight: bolder;
+  font-size: 5rem;
+  color: #7F7F7F;
+}
+.pourquoi-nous h3{
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #555555;
+  margin-top: 1rem;
+}
+.pourquoi-nous p{
+  font-size: 1rem;
+  color: #555555;
+  margin-top: 1rem;
+}
+
+/*  Galeries */
+.galerie{
+  width: 100%;
+  height: 900px;
+  margin-inline: auto;
+  display: grid;
+  gap: 1rem;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+}
+.txt-galerie h1{
+  margin-bottom: 2rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #232323;
+  width: 1420px;
+  margin-inline: auto;
+  text-align: center;
+}
+.colonne1{
+  background-image: url(../img/salon/salon01.png);
+  grid-area: 1/1/3/2;
+}
+.colonne2{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/salon/salon02.png);
+  grid-area: 1/2/2/3;
+}
+.colonne3{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/salon/salon03.png);
+  grid-area: 2/2/3/3;
+}
+.colonne4{
+  background-image: url(../img/salon/salon04.png);
+  grid-area: 1/3/3/3;
+}
+
+/* Avis */
+.avis{
+  margin-top: 5rem;
+  width: 1420px;
+  height: 600px;
+  margin-inline: auto;
+  background-color: wheat;
+}
+
+
+
+
+/* Footer */

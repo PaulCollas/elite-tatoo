@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Menu */
+.background-hero {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav.sticky {
+  background: #E7494F;
+  padding: 13px 0;
+}
+
+nav .navbar {
+  width: 1420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+nav .navbar .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #E7494F;
+}
+
+nav.sticky .navbar .logo a {
+  color: #fff;
+}
+
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+
+nav .navbar .menu li {
+  list-style: none;
+}
+
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+
+nav.sticky .menu a {
+  color: #FFF;
+}
+
+.menu {
+  gap: 2rem;
+}
+
+.navbar .icons-lang img {
+  width: 4rem;
+  margin: 0 6px;
+}
+
+nav.sticky .icons-lang img {
+  color: #FFF;
+}
+
+.nav_link {
+  font-size: 20px;
+  color: #6A6A6A;
+  text-decoration: none;
+  position: relative;
+
+}
+
+.nav_link::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: #E7494F;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s ease;
+} 
+
+nav.sticky .nav_link::after {
+  background: #FFF;
+}
+
+.nav_link:hover::after {
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.navbar .menu .nav_language a:hover {
+  color: #E7494F;
+}
+
+nav.sticky .menu .nav_language a:hover {
+  color: #FFF;
+}
+
+/* BANNER */
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .content {
+  position: relative;
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  color: #fff;
+  font-size: 5em;
+}
+
+.banner .content p {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.fitBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: #E7494F;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px
+}
+
+.btn:hover {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+}
+
+.banner_title {
+  font-size: 5em;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: Poppins, sans-serif;
+}
+
+/* navgaition scrol */
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+nav .menu-btn {
+  color: #E7494F;
+}
+
+nav.sticky .menu-btn {
+  color: #FFF;
+}
+
+.navbar .menu .menu-btn {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 750px) {
+  nav .navbar {
+    width: 90%;
+  }
+
+  nav .navbar .menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    background: #000000;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+
+  .navbar.active .menu {
+    right: 0;
+  }
+
+  nav .navbar .menu a {
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+
+  nav.sticky .menu a:hover {
+    color: #4070f4;
+  }
+
+  nav .navbar .media-icons {
+    display: none;
+  }
+
+  nav .menu-btn,
+  .navbar .menu .cancel-btn {
+    display: block;
+  }
+
+  .icons-lang {
+    display: none;
+  }
+}
