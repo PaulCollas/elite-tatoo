@@ -1,0 +1,505 @@
+/* Banner */
+
+/* CSS pour les écrans de bureau (Desktop) */
+@media screen and (min-width: 1920px) {
+    .banner .content h1.banner_title {
+        font-size: 5em;
+    }
+
+    .banner .content p {
+        font-size: 1.2em;
+    }
+}
+
+/* CSS pour les tablettes */
+@media screen and (max-width: 768px) {
+    .banner .content h1.banner_title {
+        font-size: 4em;
+    }
+
+    .banner .content p {
+        font-size: 1em;
+    }
+}
+
+/* CSS pour les mobiles */
+@media screen and (max-width: 375px) {
+    .banner .content h1.banner_title {
+        font-size: 3em;
+    }
+
+    .banner .content p {
+        font-size: 0.8em;
+    }
+}
+
+
+
+
+
+
+/* Histoire */
+
+/* CSS pour les écrans de bureau (Desktop) */
+@media screen and (min-width: 1920px) {
+    .histoire {
+        width: 1420px;
+        height: 600px;
+    }
+
+    .histoire-txt {
+        width: 540px;
+    }
+
+    .histoire-txt h1 {
+        font-size: 2.1rem;
+    }
+
+    .histoire-txt p {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+
+    .histoire-img {
+        width: 846px;
+    }
+}
+
+/* CSS pour les tablettes */
+@media screen and (max-width: 768px) {
+    .histoire {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .histoire-txt {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .histoire-txt h1 {
+        font-size: 2rem;
+    }
+
+    .histoire-txt p {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    .histoire-img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .hist-img1 {
+        margin-inline: auto;
+    }
+}
+
+/* CSS pour les mobiles */
+@media screen and (max-width: 375px) {
+    .histoire {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .histoire-txt {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .histoire-txt h1 {
+        font-size: 1.8rem;
+    }
+
+    .histoire-txt p {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+
+    .histoire-img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hist-img1 {
+        margin-inline: auto;
+    }
+}
+
+
+
+/* Tatouage sur mesure */
+
+
+/* CSS pour les écrans de bureau (Desktop) */
+@media screen and (min-width: 1920px) {
+    .personnalite {
+        width: 1420px;
+        height: 600px;
+    }
+
+    .personnalite-txt {
+        width: 540px;
+    }
+
+    .personnalite-txt h1 {
+        font-size: 2.1rem;
+    }
+
+    .personnalite-txt p {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+
+    .personnalite-img {
+        width: 800px;
+    }
+
+    .personnalite-img1 {
+        margin-bottom: 0;
+    }
+}
+
+/* CSS pour les tablettes */
+@media screen and (max-width: 768px) {
+    .personnalite {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personnalite-txt {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .personnalite-txt h1 {
+        font-size: 2rem;
+    }
+
+    .personnalite-txt p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .personnalite-img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .personnalite-img1 {
+        margin-inline: auto;
+    }
+}
+
+/* CSS pour les mobiles */
+@media screen and (max-width: 375px) {
+    .personnalite {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personnalite-txt {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .personnalite-txt h1 {
+        font-size: 1.8rem;
+    }
+
+    .personnalite-txt p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .personnalite-img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .personnalite-img1 {
+        margin-inline: auto;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+/* Pourquoi nous ? */
+
+/* CSS pour les écrans de bureau (Desktop) */
+@media screen and (min-width: 1920px) {
+    .background {
+        width: 100%;
+        background-color: black;
+    }
+
+    .background h1 {
+        padding-top: 5rem;
+        font-size: 2.1rem;
+        font-weight: 600;
+        color: #555555;
+        width: 1420px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .pourquoi-nous {
+        width: 1420px;
+        height: 900px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline: auto;
+    }
+
+    .experience,
+    .liberte,
+    .inventivite,
+    .talent,
+    .efficacite {
+        width: 245px;
+    }
+
+    .pourquoi-nous h2 {
+        font-weight: bolder;
+        font-size: 5rem;
+        color: #7F7F7F;
+    }
+
+    .pourquoi-nous h3 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #555555;
+        margin-top: 1rem;
+    }
+
+    .pourquoi-nous p {
+        font-size: 1rem;
+        color: #555555;
+        margin-top: 1rem;
+    }
+}
+
+/* CSS pour les tablettes */
+@media screen and (max-width: 768px) {
+    .background {
+        width: 100%;
+        background-color: black;
+    }
+
+    .background h1 {
+        padding-top: 5rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #555555;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .pourquoi-nous {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline: auto;
+        padding-bottom: 2rem;
+    }
+
+    .experience,
+    .liberte,
+    .inventivite,
+    .talent,
+    .efficacite {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 2rem;
+    }
+
+    .pourquoi-nous h2 {
+        font-size: 4rem;
+    }
+
+    .pourquoi-nous h3 {
+        font-size: 1.8rem;
+    }
+
+    .pourquoi-nous p {
+        font-size: 1.2rem;
+    }
+}
+
+/* CSS pour les mobiles */
+@media screen and (max-width: 375px) {
+    .background {
+        width: 100%;
+        background-color: black;
+    }
+
+    .background h1 {
+        padding-top: 3rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #555555;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .pourquoi-nous {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline: auto;
+        padding-bottom: 2rem;
+    }
+
+    .experience,
+    .liberte,
+    .inventivite,
+    .talent,
+    .efficacite {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 1rem;
+    }
+
+    .pourquoi-nous h2 {
+        font-size: 3.5rem;
+    }
+
+    .pourquoi-nous h3 {
+        font-size: 1.6rem;
+    }
+
+    .pourquoi-nous p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Galerie */
+
+/* CSS pour les écrans de bureau (Desktop) */
+
+/* CSS pour les écrans de bureau (Desktop) */
+@media screen and (min-width: 1920px) {
+    .galerie {
+      width: 1420px;
+      height: 900px;
+      margin-inline: auto;
+      display: grid;
+      gap: 1rem;
+      grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    }
+  
+    .txt-galerie h1 {
+      margin-bottom: 2rem;
+      font-size: 2.1rem;
+      font-weight: 600;
+      color: #232323;
+      width: 1420px;
+      margin-inline: auto;
+      text-align: center;
+    }
+  
+    .colonne1 {
+      background-image: url(../img/salon/salon01.png);
+      grid-area: 1/1/3/2;
+      background-size: cover;
+    }
+  
+    .colonne2 {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../img/salon/salon02.png);
+      grid-area: 1/2/2/3;
+    }
+  
+    .colonne3 {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../img/salon/salon03.png);
+      grid-area: 2/2/3/3;
+    }
+  
+    .colonne4 {
+      background-image: url(../img/salon/salon04.png);
+      grid-area: 1/3/3/3;
+      background-size: cover;
+    }
+  }
+  
+  /* CSS pour les tablettes */
+  @media screen and (max-width: 768px) {
+    .galerie {
+      width: 90%;
+      height: auto;
+      margin-inline: auto;
+      display: grid;
+      gap: 1rem;
+      grid-template: 1fr / 1fr;
+    }
+  
+    .txt-galerie h1 {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+  
+    .colonne1,
+    .colonne2,
+    .colonne3,
+    .colonne4 {
+      width: 100%;
+      height: 300px;
+      background-size: cover;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* CSS pour les mobiles */
+  @media screen and (max-width: 375px) {
+    .galerie {
+      width: 90%;
+      height: auto;
+      margin-inline: auto;
+      display: grid;
+      gap: 1rem;
+      grid-template: auto / 1fr;
+    }
+  
+    .txt-galerie h1 {
+      margin-bottom: 1.2rem;
+      font-size: 1.6rem;
+    }
+  
+    .colonne1,
+    .colonne2,
+    .colonne3,
+    .colonne4 {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      margin-bottom: 1rem;
+    }
+  }
+  
