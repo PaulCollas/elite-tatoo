@@ -2,7 +2,7 @@
 
 /* CSS pour les écrans de bureau (Desktop) */
 @media screen and (min-width: 1920px) {
-    .banner .content h1.banner_title {
+    .banner_title {
         font-size: 5em;
     }
 
@@ -13,7 +13,7 @@
 
 /* CSS pour les tablettes */
 @media screen and (max-width: 768px) {
-    .banner .content h1.banner_title {
+    .banner_title {
         font-size: 4em;
     }
 
@@ -36,7 +36,7 @@
 
 
 
-
+/* ================================ ACCUEIL ================================ */
 
 /* Histoire */
 
@@ -404,105 +404,520 @@
 /* CSS pour les écrans de bureau (Desktop) */
 @media screen and (min-width: 1920px) {
     .galerie {
-      width: 1420px;
-      height: 900px;
-      margin-inline: auto;
-      display: grid;
-      gap: 1rem;
-      grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        width: 1420px;
+        height: 900px;
+        margin-inline: auto;
+        display: grid;
+        gap: 1rem;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
     }
-  
+
     .txt-galerie h1 {
-      margin-bottom: 2rem;
-      font-size: 2.1rem;
-      font-weight: 600;
-      color: #232323;
-      width: 1420px;
-      margin-inline: auto;
-      text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2.1rem;
+        font-weight: 600;
+        color: #232323;
+        width: 1420px;
+        margin-inline: auto;
+        text-align: center;
     }
-  
+
     .colonne1 {
-      background-image: url(../img/salon/salon01.png);
-      grid-area: 1/1/3/2;
-      background-size: cover;
+        background-image: url(../img/salon/salon01.png);
+        grid-area: 1/1/3/2;
+        background-size: cover;
     }
-  
+
     .colonne2 {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../img/salon/salon02.png);
-      grid-area: 1/2/2/3;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/salon/salon02.png);
+        grid-area: 1/2/2/3;
     }
-  
+
     .colonne3 {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../img/salon/salon03.png);
-      grid-area: 2/2/3/3;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/salon/salon03.png);
+        grid-area: 2/2/3/3;
     }
-  
+
     .colonne4 {
-      background-image: url(../img/salon/salon04.png);
-      grid-area: 1/3/3/3;
-      background-size: cover;
+        background-image: url(../img/salon/salon04.png);
+        grid-area: 1/3/3/3;
+        background-size: cover;
     }
-  }
-  
-  /* CSS pour les tablettes */
-  @media screen and (max-width: 768px) {
+}
+
+/* CSS pour les tablettes */
+@media screen and (max-width: 768px) {
     .galerie {
-      width: 90%;
-      height: auto;
-      margin-inline: auto;
-      display: grid;
-      gap: 1rem;
-      grid-template: 1fr / 1fr;
+        width: 90%;
+        height: auto;
+        margin-inline: auto;
+        display: grid;
+        gap: 1rem;
+        grid-template: 1fr / 1fr;
     }
-  
+
     .txt-galerie h1 {
-      margin-bottom: 1.5rem;
-      font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
     }
-  
+
     .colonne1,
     .colonne2,
     .colonne3,
     .colonne4 {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        margin-bottom: 1rem;
+    }
+}
+
+/* CSS pour les mobiles */
+@media screen and (max-width: 375px) {
+    .galerie {
+        width: 90%;
+        height: auto;
+        margin-inline: auto;
+        display: grid;
+        gap: 1rem;
+        grid-template: auto / 1fr;
+    }
+
+    .txt-galerie h1 {
+        margin-bottom: 1.2rem;
+        font-size: 1.6rem;
+    }
+
+    .colonne1,
+    .colonne2,
+    .colonne3,
+    .colonne4 {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
+
+/* ==================== SERVICES ==================== */
+
+/* Style tatouage */
+
+/* Pour les écrans de bureau (Desktop) */
+@media screen and (min-width: 1920px) {
+    .style-tatouage {
+        width: 1420px;
+    }
+
+    .style-tatouage-txt {
+        width: 540px;
+    }
+
+    .style-tatouage-img {
+        width: 846px;
+        grid-template: 415px 415px / 415px 415px;
+    }
+}
+
+/* Pour les tablettes */
+@media screen and (max-width: 768px) {
+    .style-tatouage {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .style-tatouage-txt {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .style-tatouage-img {
+        width: 100%;
+        grid-template: 415px 415px / 1fr;
+    }
+
+    .style-tatouage-img .style-img1,
+    .style-tatouage-img .style-img2,
+    .style-tatouage-img .style-img3 {
+        width: 100%;
+        height: 415px;
+    }
+}
+
+/* Pour les mobiles */
+@media screen and (max-width: 375px) {
+    .style-tatouage-txt h2 {
+        font-size: 1.2rem;
+    }
+
+    .style-tatouage-txt h1 {
+        font-size: 1.8rem;
+    }
+
+    .style-tatouage-txt p {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* Tatouage Ephémère */
+
+/* Pour les écrans de bureau (Desktop) */
+@media screen and (min-width: 1920px) {
+    .tatouage-ephemere {
+        width: 1420px;
+    }
+
+    .tatouage-ephemere-txt {
+        text-align: end;
+        width: 540px;
+    }
+
+    .tatouage-ephemere-img {
+        width: 846px;
+    }
+}
+
+/* Pour les tablettes */
+@media screen and (max-width: 768px) {
+    .tatouage-ephemere {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .tatouage-ephemere-txt {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .tatouage-ephemere-img {
+        width: 100%;
+    }
+
+    .tatouage-ephemere-img .ephemere-img1 {
+        width: 100%;
+        height: 415px;
+    }
+}
+
+/* Pour les mobiles */
+@media screen and (max-width: 375px) {
+    .tatouage-ephemere-txt h2 {
+        font-size: 1.2rem;
+    }
+
+    .tatouage-ephemere-txt h1 {
+        font-size: 1.8rem;
+    }
+
+    .tatouage-ephemere-txt p {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+/* Avantages */
+
+/* Pour les écrans de bureau (Desktop) */
+@media screen and (min-width: 1920px) {
+    .avantages {
+        width: 1420px;
+    }
+
+    .avantages-txt {
+        width: 710px;
+    }
+
+    .avantages-img {
+        width: 710px;
+    }
+}
+
+/* Pour les tablettes */
+@media screen and (max-width: 768px) {
+    .avantages {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .avantages-txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .avantages-img {
+        width: 100%;
+        height: 250px;
+        /* Ajuster la hauteur selon vos besoins */
+    }
+
+    .avantages01 {
+        flex-direction: column;
+    }
+
+    i {
+        margin: 0 auto;
+    }
+}
+
+/* Pour les mobiles */
+@media screen and (max-width: 375px) {
+    .avantages-txt h1 {
+        font-size: 1.8rem;
+    }
+
+    .avantages01 p {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+/* Modèles */
+
+
+/* Pour les écrans de bureau (Desktop) */
+@media screen and (min-width: 1920px) {
+    .modeles .wrapper {
+        max-width: 1420px;
+    }
+
+    .carousel img {
+        height: 550px;
+        width: calc(100% / 3);
+    }
+}
+
+/* Pour les tablettes */
+@media screen and (max-width: 768px) {
+    .modeles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper {
+        max-width: 90%;
+    }
+
+    .wrapper i:first-child {
+        display: block;
+        left: 0;
+    }
+
+    .wrapper i:last-child {
+        right: 0;
+    }
+
+    .carousel img {
+        height: 350px;
+        width: calc(100% / 2);
+    }
+}
+
+/* Pour les mobiles */
+@media screen and (max-width: 375px) {
+    .carousel img {
+        height: 250px;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+/* Retouche Tatouage */
+/* Pour les écrans de bureau (Desktop) */
+@media screen and (min-width: 1920px) {
+    /* .retouche-tatouage {
+      flex-wrap: wrap;
+    }
+  
+    .retouche-tatouage-txt {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .icone-img {
+      display: grid;
+      gap: 3.5rem;
+      justify-content: space-between;
+      grid-template: 1fr 1fr / 1fr 1fr;
+    } */
+}
+
+/* Pour les tablettes et mobiles */
+@media screen and (max-width: 768px) {
+    .retouche-tatouage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .retouche-tatouage-txt {
+        width: 90%;
+        text-align: center;
+    }
+
+    .icone-img {
+        display: grid;
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* Bloc Projet */
+
+
+/* For Tablet (768px) */
+@media (max-width: 768px) {
+    .projets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For Mobile (375px) */
+@media (max-width: 375px) {
+    .projets {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+/* Personnalisation */
+
+
+/* For Tablet (768px) */
+@media (max-width: 768px) {
+    .personnalisation {
+        grid-template: repeat(3, 1fr) / 1fr;
+    }
+
+    .categorie1,
+    .categorie2,
+    .categorie3 {
+        justify-content: center;
+        width: 36%;
+        padding-bottom: 30px;
+    }
+}
+
+/* For Mobile (375px) */
+@media (max-width: 375px) {
+    .personnalisation {
+        grid-template: repeat(3, auto) / 1fr;
+    }
+
+    .categorie1,
+    .categorie2,
+    .categorie3 {
+        width: 20%;
+    }
+}
+
+
+
+
+/* Soins et hygiène */ 
+
+@media (max-width: 768px) {
+    .soins-hygiene {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .soins-hygiene-txt {
+      order: 2;
+      width: 100%;
+      text-align: start;
+      margin-bottom: 2rem;
+    }
+  
+    .soins-hygiene-img {
+      order: 1;
       width: 100%;
       height: 300px;
-      background-size: cover;
-      margin-bottom: 1rem;
     }
   }
   
-  /* CSS pour les mobiles */
-  @media screen and (max-width: 375px) {
-    .galerie {
-      width: 90%;
-      height: auto;
-      margin-inline: auto;
-      display: grid;
+  /* For Mobile (375px) */
+  @media (max-width: 375px) {
+    .soins-hygiene-img {
+      height: 200px; /* Adjust the height for mobile view */
+    }
+  }
+
+
+
+
+/* Conseil */ 
+
+/* For Mobile (375px) */
+@media (max-width: 375px) {
+    .conseil-txt {
+      text-align: center;
+    }
+    .conseil {
+      grid-template: auto auto auto auto / 1fr;
+    }
+    .hygiene,
+    .materiel,
+    .soins,
+    .sterilisation {
+      flex-direction: column;
       gap: 1rem;
-      grid-template: auto / 1fr;
     }
-  
-    .txt-galerie h1 {
-      margin-bottom: 1.2rem;
-      font-size: 1.6rem;
-    }
-  
-    .colonne1,
-    .colonne2,
-    .colonne3,
-    .colonne4 {
-      width: 100%;
-      height: 200px;
-      background-size: cover;
-      margin-bottom: 1rem;
+    .hygiene-icone,
+    .materiel-icone,
+    .soins-icone,
+    .sterilisation-icone {
+      margin: 0 auto;
     }
   }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
