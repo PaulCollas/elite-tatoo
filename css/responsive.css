@@ -14,7 +14,7 @@
 /* CSS pour les tablettes */
 @media screen and (max-width: 768px) {
     .banner_title {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .banner .content p {
@@ -25,7 +25,7 @@
 /* CSS pour les mobiles */
 @media screen and (max-width: 375px) {
     .banner .content h1.banner_title {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .banner .content p {
@@ -845,62 +845,66 @@
 
 
 
-/* Soins et hygiène */ 
+/* Soins et hygiène */
 
 @media (max-width: 768px) {
     .soins-hygiene {
-      flex-direction: column;
-      height: auto;
+        flex-direction: column;
+        height: auto;
     }
-  
+
     .soins-hygiene-txt {
-      order: 2;
-      width: 100%;
-      text-align: start;
-      margin-bottom: 2rem;
+        order: 2;
+        width: 100%;
+        text-align: start;
+        margin-bottom: 2rem;
     }
-  
+
     .soins-hygiene-img {
-      order: 1;
-      width: 100%;
-      height: 300px;
+        order: 1;
+        width: 100%;
+        height: 300px;
     }
-  }
-  
-  /* For Mobile (375px) */
-  @media (max-width: 375px) {
+}
+
+/* For Mobile (375px) */
+@media (max-width: 375px) {
     .soins-hygiene-img {
-      height: 200px; /* Adjust the height for mobile view */
+        height: 200px;
+        /* Adjust the height for mobile view */
     }
-  }
+}
 
 
 
 
-/* Conseil */ 
+/* Conseil */
 
 /* For Mobile (375px) */
 @media (max-width: 375px) {
     .conseil-txt {
-      text-align: center;
+        text-align: center;
     }
+
     .conseil {
-      grid-template: auto auto auto auto / 1fr;
+        grid-template: auto auto auto auto / 1fr;
     }
+
     .hygiene,
     .materiel,
     .soins,
     .sterilisation {
-      flex-direction: column;
-      gap: 1rem;
+        flex-direction: column;
+        gap: 1rem;
     }
+
     .hygiene-icone,
     .materiel-icone,
     .soins-icone,
     .sterilisation-icone {
-      margin: 0 auto;
+        margin: 0 auto;
     }
-  }
+}
 
 
 
@@ -917,43 +921,137 @@
 
 /* ==================== Page de rendez-vous ==================== */
 
-/* Formulaire */ 
+/* Formulaire */
 
 
 /* For Tablet (768px) */
 @media (max-width: 768px) {
     .container {
-      max-width: 90%; /* Adjust the container width for better fit on tablet */
+        max-width: 90%;
+        /* Adjust the container width for better fit on tablet */
     }
+
     .form {
-      display: grid;
-      grid-template-columns: 1fr; /* Display the form inputs in a single column */
-      row-gap: 20px; /* Add some spacing between the form inputs */
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Display the form inputs in a single column */
+        row-gap: 20px;
+        /* Add some spacing between the form inputs */
     }
+
     .form .column {
-      flex-direction: column; /* Change the direction of the 'column' section to column layout */
+        flex-direction: column;
+        /* Change the direction of the 'column' section to column layout */
     }
+
     .gender-option .gender {
-      margin-bottom: 15px; /* Add some space between the gender options on tablet */
+        margin-bottom: 15px;
+        /* Add some space between the gender options on tablet */
     }
+
     .case-a-cocher .column {
-      flex-direction: column; /* Change the direction of the checkbox section to column layout */
-      gap: 10px; /* Add some spacing between the checkboxes */
+        flex-direction: column;
+        /* Change the direction of the checkbox section to column layout */
+        gap: 10px;
+        /* Add some spacing between the checkboxes */
     }
-  }
-  
-  /* For Mobile (375px) */
-  @media (max-width: 375px) {
+}
+
+/* For Mobile (375px) */
+@media (max-width: 375px) {
     .container {
-      max-width: 100%; /* Adjust the container width to fit the mobile screen */
+        max-width: 100%;
+        /* Adjust the container width to fit the mobile screen */
     }
+
     .form {
-      row-gap: 15px; /* Reduce the spacing between the form inputs on mobile */
+        row-gap: 15px;
+        /* Reduce the spacing between the form inputs on mobile */
     }
+
     .case-a-cocher .column {
-      gap: 5px; /* Reduce the spacing between the checkboxes on mobile */
+        gap: 5px;
+        /* Reduce the spacing between the checkboxes on mobile */
     }
-  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ==================== Page de contact ==================== */
+
+/* Informations */
+
+/* For Tablet (768px) */
+@media (max-width: 768px) {
+    .informations {
+        grid-template-columns: 1fr;
+        /* Display the blocks in a single column */
+    }
+
+    .block {
+        width: 100%;
+        /* Adjust the width of the blocks for better fit on tablet */
+    }
+}
+
+/* For Mobile (375px) */
+@media (max-width: 375px) {
+    .informations {
+        grid-template-columns: 1fr;
+        /* Display the blocks in a single column */
+    }
+}
+
+
+/* Formulaire */
+
+/* For Tablet (768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Stack the elements on top of each other */
+    }
+
+    .maps,
+    .form {
+        width: 100%;
+        /* Make the map and form occupy the full width */
+    }
+
+    .form .input-box {
+        margin-top: 10px !important;
+        /* Adjust the margin for better spacing */
+    }
+}
+
+/* For Mobile (375px) */
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        /* Stack the elements on top of each other */
+    }
+
+    .maps,
+    .form {
+        width: 100%;
+        /* Make the map and form occupy the full width */
+    }
+
+    .form .input-box {
+        margin-top: 10px !important;
+        /* Adjust the margin for better spacing */
+    }
+}
+
+
+
 
 
 
