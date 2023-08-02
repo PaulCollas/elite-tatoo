@@ -1036,6 +1036,7 @@
     .container {
         flex-direction: column;
         /* Stack the elements on top of each other */
+        width: 100%;
     }
 
     .maps,
@@ -1060,8 +1061,57 @@
 
 
 
+/* ==================== Page d'1 artiste ==================== */
 
 
+/* Artiste + Bio */
+
+/* For Tablet (768px) */
+@media (min-width: 768px) {
+  .container_img {
+    flex: 1 1 50%; /* Take 50% width on tablet and larger screens */
+  }
+
+  .container_txt {
+    flex: 1 1 50%; /* Take 50% width on tablet and larger screens */
+    margin-top: 2rem;
+  }
+
+  .container_txt h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .container_txt p {
+    font-size: 1.5rem; /* Adjust font size for tablet */
+  }
+}
+
+/* For Mobile (375px) */
+@media (max-width: 375px) {
+  .container_img,
+  .container_txt {
+    flex: 1 1 100%; /* Take full width on mobile */
+  }
+}
+
+
+
+
+/* Galerie */ 
+
+@media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row on Tablet */
+    }
+  }
+  
+  /* For Mobile (375px) */
+  @media (max-width: 375px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr); /* 1 image per row on Mobile */
+    }
+  }
 
 
 

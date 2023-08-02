@@ -12,34 +12,45 @@ body{
 }
 
 /* Artistes + Bio */
-.background{
+.background {
   width: 100%;
 }
-.container{
+
+.container {
   padding-top: 10rem;
-  width: 1420px;
-  align-items: center;
+  max-width: 1420px;
+  width: 100%;
   margin-inline: auto;
-  display: grid;
-  grid-template: 1fr /  710px 710px ;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap on smaller screens */
 }
-.container_txt h2{
+
+.container_img {
+  flex: 1 1 100%; /* Take full width on small screens */
+  margin-bottom: 1rem; /* Add some spacing between image and text */
+}
+
+.container_img img {
+  width: 100%; /* Make sure the image takes the full width of its container */
+}
+
+.container_txt {
+  flex: 1 1 100%; /* Take full width on small screens */
+  margin-top: 1rem; /* Add some spacing between image and text */
+  color: rgb(88, 88, 88);
+}
+
+.container_txt h2 {
   color: #E7494F;
   font-weight: 600;
   font-size: 2.5rem;
   padding-bottom: 1rem;
 }
-.container_txt p{
+
+.container_txt p {
   font-weight: 300;
   font-size: 1.5rem;
-  line-height: 1.8rem;
-}
-.container_img{
-  grid-area: 1/1/2/2;
-}
-.container_txt{
-  grid-area: 1/2/2/3;
-  color: rgb(88, 88, 88);
+  line-height: 2.8rem;
 }
 
 /* Grille Tatouage */
@@ -50,6 +61,22 @@ body{
   grid-gap: 10px;
   max-width: 1420px;
   margin: 0 auto;
+}
+
+.grid-item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Keep the container square (aspect ratio 1:1) */
+  overflow: hidden;
+}
+
+.grid-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
