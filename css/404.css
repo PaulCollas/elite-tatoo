@@ -27,18 +27,6 @@ body{
   transform-style: preserve-3d;
 }
 
-@property --swing-x {
-  initial-value: 0;
-  inherits: false;
-  syntax: '<integer>';
-}
-
-@property --swing-y {
-  initial-value: 0;
-  inherits: false;
-  syntax: '<integer>';
-}
-
 body {
   min-height: 100vh;
   display: flex;
@@ -132,6 +120,17 @@ h1:after {
 
 .info > p {
   margin-bottom: 3rem;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: #E7494F;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
 }
 
 @keyframes swing {
