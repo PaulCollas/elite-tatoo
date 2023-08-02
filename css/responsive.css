@@ -915,6 +915,63 @@
 
 
 
+/* ==================== Page de rendez-vous ==================== */
+
+/* Formulaire */ 
+
+
+/* For Tablet (768px) */
+@media (max-width: 768px) {
+    .container {
+      max-width: 90%; /* Adjust the container width for better fit on tablet */
+    }
+    .form {
+      display: grid;
+      grid-template-columns: 1fr; /* Display the form inputs in a single column */
+      row-gap: 20px; /* Add some spacing between the form inputs */
+    }
+    .form .column {
+      flex-direction: column; /* Change the direction of the 'column' section to column layout */
+    }
+    .gender-option .gender {
+      margin-bottom: 15px; /* Add some space between the gender options on tablet */
+    }
+    .case-a-cocher .column {
+      flex-direction: column; /* Change the direction of the checkbox section to column layout */
+      gap: 10px; /* Add some spacing between the checkboxes */
+    }
+  }
+  
+  /* For Mobile (375px) */
+  @media (max-width: 375px) {
+    .container {
+      max-width: 100%; /* Adjust the container width to fit the mobile screen */
+    }
+    .form {
+      row-gap: 15px; /* Reduce the spacing between the form inputs on mobile */
+    }
+    .case-a-cocher .column {
+      gap: 5px; /* Reduce the spacing between the checkboxes on mobile */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
