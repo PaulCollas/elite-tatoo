@@ -210,7 +210,7 @@ i{
 .retouche-tatouage{
   margin-top: 7rem;
   margin-bottom: 8rem;
-  width: 1420px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   margin-inline: auto;
@@ -236,7 +236,7 @@ i{
   line-height: 1.5rem;
 }
 .icone-img{
-  width: 800px;
+  width: 50%;
   display: grid;
   gap: 3.5rem;
   justify-content: space-between;
@@ -273,32 +273,20 @@ i{
 }
 
 /*  Bloc projets */
-.projets{
-  width: 1420px;
-  height: 130px;
-  margin-inline: auto;
+.projets {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
   display: grid;
-  justify-content: space-between;
-  grid-template: 1fr/ 340px 340px 340px 340px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
 }
-.projets1 h2, .projets3 h2, .projets4 h2{
-  font-size: 2rem;
-  font-weight: bold;
-}
-.projets1 p, .projets3 p, .projets4 p{
-  font-size: 1.5rem;
-}
-.projets2 h2{
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.projets2 p{
-  color: white;
-  font-size: 1.5rem;
-}
-.projets1{
-  grid-area: 1/1/2/2;
+
+.projets1,
+.projets3,
+.projets4 {
   border-radius: 1.5rem;
   display: flex;
   gap: 1rem;
@@ -306,9 +294,10 @@ i{
   flex-direction: column;
   justify-content: center;
   background-color: #CCCCCC;
+  padding: 25px;
 }
-.projets2{
-  grid-area: 1/2/2/3;
+
+.projets2 {
   border-radius: 1.5rem;
   display: flex;
   gap: 1rem;
@@ -316,26 +305,22 @@ i{
   flex-direction: column;
   justify-content: center;
   background-color: #E7494F;
+  padding: 25px;
 }
-.projets3{
-  grid-area: 1/3/2/4;
-  border-radius: 1.5rem;
-  display: flex;
-  gap: 1rem;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #CCCCCC;
+
+.projets1 h2,
+.projets3 h2,
+.projets4 h2,
+.projets2 h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-.projets4{
-  grid-area: 1/4/2/5;
-  border-radius: 1.5rem;
-  display: flex;
-  gap: 1rem;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #CCCCCC;
+
+.projets1 p,
+.projets3 p,
+.projets4 p,
+.projets2 p {
+  font-size: 1.2rem;
 }
 
 /*  Comment ça marche */
@@ -454,7 +439,7 @@ i{
 
 /*  Conseil */
 .conseil {
-  width: 1420px;
+  width: 80%;
   margin-inline: auto;
   display: grid;
   justify-content: space-between;
@@ -468,6 +453,7 @@ i{
   display: flex;
   gap: 2rem;
   align-items: center;
+  margin-right: 30px;
 }
 
 .hygiene-icone,

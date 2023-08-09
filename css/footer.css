@@ -9,48 +9,48 @@ footer {
     margin-top: 50px;
 }
 
-.column {
+.column-footer {
     flex-basis: 100%;
     flex-basis: calc(25% - 40px); /* Pour les grands écrans */
     margin-bottom: 20px;
 }
 
-.column h3 {
+.column-footer h3 {
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
     font-size: 20px;
 }
 
-.icon-text {
+.icon-text-footer {
     color: white;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.icon-text i {
+.icon-text-footer i {
     width: 20px;
     height: 20px;
     margin-right: 5px;
     color: #E7494F;
 }
 
-.column ul {
+.column-footer ul {
     list-style: none;
     padding: 0;
 }
 
-.column ul li {
+.column-footer ul li {
     margin-bottom: 20px;
 }
 
-.column ul li a {
+.column-footer ul li a {
     color: grey;
     text-decoration: none;
 }
 
-.column ul li a:hover {
+.column-footer ul li a:hover {
     color: white;
 }
 
