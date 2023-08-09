@@ -455,7 +455,7 @@
         width: 90%;
         height: auto;
         margin-inline: auto;
-        display: grid;
+        display: block;
         gap: 1rem;
         grid-template: 1fr / 1fr;
     }
@@ -819,13 +819,14 @@
 @media (max-width: 768px) {
     .personnalisation {
         grid-template: repeat(3, 1fr) / 1fr;
+        width: 80%;
     }
 
     .categorie1,
     .categorie2,
     .categorie3 {
         justify-content: center;
-        width: 30%;
+        width: 100%;
         padding-bottom: 30px;
     }
 }
@@ -1134,7 +1135,7 @@
 
 
 /* Footer */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
     .column-footer {
         flex-basis: calc(33.33% - -77px);
     }
